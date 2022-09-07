@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpractical_programmer=self.webpackChunkpractical_programmer||[]).push([[5129],{4047:a=>{a.exports=JSON.parse('{"permalink":"/practical-programmer/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
