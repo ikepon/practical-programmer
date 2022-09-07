@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Practical Programmer',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Practical Programmer are cool',
   url: 'https://ikepon.github.io/',
   baseUrl: '/practical-programmer/',
   onBrokenLinks: 'throw',
@@ -58,9 +58,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Practical Programmer',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Practical Programmer Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -72,7 +72,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ikepon/practical-programmer',
             label: 'GitHub',
             position: 'right',
           },
@@ -116,12 +116,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ikepon/practical-programmer',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Practical Programmer Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
