@@ -41,12 +41,6 @@ const config = {
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      {
-        gtag: {
-          trackingID: 'G-23FYEP9MGB',
-          anonymizeIP: true,
-        },
-      },
       ({
         docs: {
           path: 'docs',
@@ -58,6 +52,16 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-23FYEP9MGB',
+          anonymizeIP: true,
+        },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
       }),
     ],
