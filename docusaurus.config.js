@@ -5,6 +5,12 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
+function MyPlugin(context, options) {
+  return {
+    name: 'my-plugin',
+  };
+}
+
 const config = {
   title: 'Practical Programmer',
   tagline: 'Practical Programmer are cool',
@@ -20,6 +26,8 @@ const config = {
   projectName: 'practical-programmer', // Usually your repo name.
   trailingSlash: false,
 
+  plugins: [MyPlugin],
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -30,22 +38,16 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'docs',
+          sidebarPath: 'sidebars.js',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'blog',
+          postsPerPage: 10,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
